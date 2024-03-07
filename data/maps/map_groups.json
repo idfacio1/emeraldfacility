@@ -101,7 +101,11 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab",
-    "BirchsNewLab"
+    "BirchsNewLab",
+    "EmeraldFacilitySafariZoneEntrance",
+    "EmeraldFacilityShopping",
+    "EmeraldFacilityDorms",
+    "EmeraldFacilityElevator"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

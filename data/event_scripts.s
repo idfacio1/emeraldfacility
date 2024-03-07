@@ -1071,3 +1071,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BirchsNewLab/scripts.inc"
 
 	.include "data/maps/EmeraldFacilityHub/scripts.inc"
+
+	.include "data/maps/EmeraldFacilitySafariZoneEntrance/scripts.inc"
+
+	.include "data/maps/EmeraldFacilityShopping/scripts.inc"
+
+	.include "data/maps/EmeraldFacilityDorms/scripts.inc"
+
+	.include "data/maps/EmeraldFacilityElevator/scripts.inc"

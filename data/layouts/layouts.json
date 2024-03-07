@@ -4424,12 +4424,52 @@
     {
       "id": "LAYOUT_EMERALD_FACILITY_HUB",
       "name": "EmeraldFacilityHub_Layout",
-      "width": 20,
-      "height": 13,
+      "width": 21,
+      "height": 11,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/EmeraldFacilityHub/border.bin",
       "blockdata_filepath": "data/layouts/EmeraldFacilityHub/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_FACILITY_SAFARI_ZONE_ENTRANCE",
+      "name": "EmeraldFacilitySafariZoneEntrance_Layout",
+      "width": 19,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/EmeraldFacilitySafariZoneEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldFacilitySafariZoneEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_FACILITY_SHOPPING",
+      "name": "EmeraldFacilityShopping_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/EmeraldFacilityShopping/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldFacilityShopping/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_FACILITY_DORMS",
+      "name": "EmeraldFacilityDorms_Layout",
+      "width": 17,
+      "height": 29,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EmeraldFacilityDorms/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldFacilityDorms/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_FACILITY_ELEVATOR",
+      "name": "EmeraldFacilityElevator_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/EmeraldFacilityElevator/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldFacilityElevator/map.bin"
     }
   ]
 }
