@@ -18,15 +18,15 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 28,
+      "x": 7,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_EMERALD_FACILITY_HUB",
       "dest_warp_id": "0"
     },
     {
-      "x": 9,
-      "y": 28,
+      "x": 8,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_EMERALD_FACILITY_HUB",
       "dest_warp_id": "0"

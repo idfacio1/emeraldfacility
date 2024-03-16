@@ -1234,7 +1234,7 @@
     {
       "id": "LAYOUT_ROUTE121_SAFARI_ZONE_ENTRANCE",
       "name": "Route121_SafariZoneEntrance_Layout",
-      "width": 18,
+      "width": 34,
       "height": 14,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
@@ -4415,9 +4415,9 @@
       "id": "LAYOUT_BIRCHS_NEW_LAB",
       "name": "BirchsNewLab_Layout",
       "width": 20,
-      "height": 24,
+      "height": 25,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleFactory",
+      "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/BirchsNewLab/border.bin",
       "blockdata_filepath": "data/layouts/BirchsNewLab/map.bin"
     },
@@ -4454,8 +4454,8 @@
     {
       "id": "LAYOUT_EMERALD_FACILITY_DORMS",
       "name": "EmeraldFacilityDorms_Layout",
-      "width": 17,
-      "height": 29,
+      "width": 16,
+      "height": 23,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/EmeraldFacilityDorms/border.bin",
@@ -4470,6 +4470,16 @@
       "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/EmeraldFacilityElevator/border.bin",
       "blockdata_filepath": "data/layouts/EmeraldFacilityElevator/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_FACILITY_CANTEEN",
+      "name": "EmeraldFacilityCanteen_Layout",
+      "width": 16,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EmeraldFacilityCanteen/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldFacilityCanteen/map.bin"
     }
   ]
 }

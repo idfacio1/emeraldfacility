@@ -1358,7 +1358,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Rattata),
         ICON(Rattata, 2),
         LEARNSETS(Rattata),
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE},
+                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RATTATA_ALOLAN}),
     },
 
     [SPECIES_RATICATE] =
@@ -1396,6 +1397,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Raticate),
         ICON(Raticate, 2),
         LEARNSETS(Raticate),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RATICATE_ALOLAN}),
     },
 
 #if P_ALOLAN_FORMS
@@ -1429,7 +1431,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(RattataAlolan, 2),
         LEARNSETS(RattataAlolan),
         .isAlolanForm = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 20, SPECIES_RATICATE_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE_ALOLAN},
+                                {EVO_ITEM, ITEM_KANTO_STONE, SPECIES_RATTATA}),
     },
 
     [SPECIES_RATICATE_ALOLAN] =
@@ -1467,6 +1470,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(RaticateAlolan, 2),
         LEARNSETS(RaticateAlolan),
         .isAlolanForm = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KANTO_STONE, SPECIES_RATICATE},
+                                {EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_RATICATE_ALOLAN_TOTEM}),
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RATTATA
@@ -1717,7 +1722,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         PALETTES(Pichu),
         ICON(Pichu, 1),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PIKACHU}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_PIKACHU}),
     },
 
     [SPECIES_PICHU_SPIKY_EARED] =
@@ -1793,7 +1798,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #endif
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}),
+                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -2139,6 +2144,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Raichu),
         ICON(Raichu, 0),
         LEARNSETS(Raichu),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #if P_ALOLAN_FORMS
@@ -2177,6 +2183,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(RaichuAlolan),
         ICON(RaichuAlolan, 2),
         LEARNSETS(RaichuAlolan),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KANTO_STONE, SPECIES_RAICHU}),
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PIKACHU
@@ -2247,7 +2254,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Sandshrew),
         ICON(Sandshrew, 2),
         LEARNSETS(Sandshrew),
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH},
+                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_SANDSHREW_ALOLAN}),
     },
 
     [SPECIES_SANDSLASH] =
@@ -2283,6 +2291,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Sandslash),
         ICON(Sandslash, 2),
         LEARNSETS(Sandslash),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_SANDSLASH_ALOLAN}),
+
     },
 
 #if P_ALOLAN_FORMS
@@ -2320,7 +2330,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(SandshrewAlolan, 0),
         LEARNSETS(SandshrewAlolan),
         .isAlolanForm = TRUE,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SANDSLASH_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SANDSLASH_ALOLAN},
+                                {EVO_ITEM, ITEM_KANTO_STONE, SPECIES_SANDSHREW}),
     },
 
     [SPECIES_SANDSLASH_ALOLAN] =
@@ -2357,6 +2368,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(SandslashAlolan, 0),
         LEARNSETS(SandslashAlolan),
         .isAlolanForm = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KANTO_STONE, SPECIES_SANDSLASH}),
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SANDSHREW
@@ -2504,6 +2516,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Nidoqueen, 2),
         .footprint = gMonFootprint_Nidoqueen,
         LEARNSETS(Nidoqueen),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_NIDOKING}),
     },
 
     [SPECIES_NIDORAN_M] =
@@ -2648,6 +2661,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Nidoking, 2),
         .footprint = gMonFootprint_Nidoking,
         LEARNSETS(Nidoking),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_NIDOQUEEN}),
     },
 #endif //P_FAMILY_NIDORAN
 
@@ -2706,7 +2720,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Cleffa, 0),
         .footprint = gMonFootprint_Cleffa,
         LEARNSETS(Cleffa),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_CLEFAIRY}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 

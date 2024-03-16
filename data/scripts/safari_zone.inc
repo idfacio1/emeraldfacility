@@ -94,16 +94,14 @@ SafariZone_Text_PokeblockWasPlaced:
 	.string "on the {POKEBLOCK} FEEDER.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
-	.string "What's more, we've thrown open the\n"
-	.string "gates to POKéMON TRAINERS.\p"
-	.string "You're encouraged to catch POKéMON\n"
-	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Welcome to the Emerald Facility\p"
+	.string "Safari Zone! Here you will be\l"
+	.string "able to catch Pokémon from all\l"
+	.string "across the world.\n"
+	.string "You may use any Pokémon caught\p"
+	.string "here in any Emerald Facility \l"
+	.string "battle. Please play as much \l"
+	.string "as you'd like, and enjoy!$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
 	.string "Welcome to the SAFARI ZONE!\n"

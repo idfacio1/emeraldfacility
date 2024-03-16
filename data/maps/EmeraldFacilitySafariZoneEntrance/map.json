@@ -81,7 +81,7 @@
       "x": 8,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_EMERALD_FACILITY_SAFARI_ZONE_ENTRANCE",
+      "dest_map": "MAP_EMERALD_FACILITY_HUB",
       "dest_warp_id": "3"
     }
   ],
@@ -90,28 +90,28 @@
       "type": "trigger",
       "x": 8,
       "y": 3,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     },
     {
       "type": "trigger",
       "x": 9,
       "y": 3,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 3,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     }
   ],
   "bg_events": [

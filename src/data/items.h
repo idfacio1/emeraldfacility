@@ -2889,6 +2889,149 @@ const struct Item gItems[] =
         .flingPower = 30,
     },
 
+    [ITEM_ALOLA_STONE] =
+    {
+        .name = _("Alola Stone"),
+        .price = 3000,
+        .description = sAlolaStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_FUTURE_STONE] =
+    {
+        .name = _("Future Stone"),
+        .price = 3000,
+        .description = sFutureStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_GALAR_STONE] =
+    {
+        .name = _("Galar Stone"),
+        .price = 3000,
+        .description = sGalarStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_HISUI_STONE] =
+    {
+        .name = _("Hisui Stone"),
+        .price = 3000,
+        .description = sHisuiStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_HOENN_STONE] =
+    {
+        .name = _("Hoenn Stone"),
+        .price = 3000,
+        .description = sHoennStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_JOHTO_STONE] =
+    {
+        .name = _("Johto Stone"),
+        .price = 3000,
+        .description = sJohtoStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_KALOS_STONE] =
+    {
+        .name = _("Kalos Stone"),
+        .price = 3000,
+        .description = sKalosStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },    
+
+    [ITEM_KANTO_STONE] =
+    {
+        .name = _("Kanto Stone"),
+        .price = 3000,
+        .description = sKantoStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_ODDITY_STONE] =
+    {
+        .name = _("Oddity Stone"),
+        .price = 3000,
+        .description = sOddityStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 200,
+    },
+
+    [ITEM_PALDEA_STONE] =
+    {
+        .name = _("Paldea Stone"),
+        .price = 3000,
+        .description = sPaldeaStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_PAST_STONE] =
+    {
+        .name = _("Past Stone"),
+        .price = 3000,
+        .description = sPastStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_SINNOH_STONE] =
+    {
+        .name = _("Sinnoh Stone"),
+        .price = 3000,
+        .description = sSinnohStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },    
+
+    [ITEM_UNOVA_STONE] =
+    {
+        .name = _("Unova Stone"),
+        .price = 3000,
+        .description = sUnovaStoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
 // Nectars
 
     [ITEM_RED_NECTAR] =
@@ -5329,8 +5472,8 @@ const struct Item gItems[] =
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sHardStoneDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = EVO_HELD_ITEM_TYPE,
+        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .flingPower = 100,
     },
 

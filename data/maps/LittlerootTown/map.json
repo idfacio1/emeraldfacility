@@ -151,8 +151,8 @@
       "x": 29,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BIRCHS_NEW_LAB",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

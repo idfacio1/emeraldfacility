@@ -1079,3 +1079,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/EmeraldFacilityDorms/scripts.inc"
 
 	.include "data/maps/EmeraldFacilityElevator/scripts.inc"
+
+	.include "data/maps/EmeraldFacilityCanteen/scripts.inc"

@@ -988,8 +988,21 @@
 #define ITEM_GLIMMERING_CHARM 813
 #define ITEM_814 814 // TWV0YWwgQWxsb3k=
 #define ITEM_815 815 // U3RlbGxhciBUZXJhIFNoYXJk
+#define ITEM_ALOLA_STONE 816
+#define ITEM_FUTURE_STONE 817
+#define ITEM_GALAR_STONE 818
+#define ITEM_HISUI_STONE 819
+#define ITEM_HOENN_STONE 820
+#define ITEM_JOHTO_STONE 821
+#define ITEM_KALOS_STONE 822
+#define ITEM_KANTO_STONE 823
+#define ITEM_ODDITY_STONE 824
+#define ITEM_PALDEA_STONE 825
+#define ITEM_PAST_STONE 826
+#define ITEM_SINNOH_STONE 827
+#define ITEM_UNOVA_STONE 828
 
-#define ITEMS_COUNT 816
+#define ITEMS_COUNT 829
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

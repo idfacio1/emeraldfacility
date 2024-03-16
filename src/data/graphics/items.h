@@ -663,6 +663,45 @@ const u32 gItemIconPalette_UnremarkableTeacup[] = INCBIN_U32("graphics/items/ico
 const u32 gItemIcon_MasterpieceTeacup[] = INCBIN_U32("graphics/items/icons/masterpiece_teacup.4bpp.lz");
 const u32 gItemIconPalette_MasterpieceTeacup[] = INCBIN_U32("graphics/items/icon_palettes/masterpiece_teacup.gbapal.lz");
 
+const u32 gItemIcon_AlolaStone[] = INCBIN_U32("graphics/items/icons/alola_stone.4bpp.lz");
+const u32 gItemIconPalette_AlolaStone[] = INCBIN_U32("graphics/items/icon_palettes/alola_stone.gbapal.lz");
+
+const u32 gItemIcon_FutureStone[] = INCBIN_U32("graphics/items/icons/future_stone.4bpp.lz");
+const u32 gItemIconPalette_FutureStone[] = INCBIN_U32("graphics/items/icon_palettes/future_stone.gbapal.lz");
+
+const u32 gItemIcon_GalarStone[] = INCBIN_U32("graphics/items/icons/galar_stone.4bpp.lz");
+const u32 gItemIconPalette_GalarStone[] = INCBIN_U32("graphics/items/icon_palettes/galar_stone.gbapal.lz");
+
+const u32 gItemIcon_HisuiStone[] = INCBIN_U32("graphics/items/icons/hisui_stone.4bpp.lz");
+const u32 gItemIconPalette_HisuiStone[] = INCBIN_U32("graphics/items/icon_palettes/hisui_stone.gbapal.lz");
+
+const u32 gItemIcon_HoennStone[] = INCBIN_U32("graphics/items/icons/hoenn_stone.4bpp.lz");
+const u32 gItemIconPalette_HoennStone[] = INCBIN_U32("graphics/items/icon_palettes/hoenn_stone.gbapal.lz");
+
+const u32 gItemIcon_JohtoStone[] = INCBIN_U32("graphics/items/icons/johto_stone.4bpp.lz");
+const u32 gItemIconPalette_JohtoStone[] = INCBIN_U32("graphics/items/icon_palettes/johto_stone.gbapal.lz");
+
+const u32 gItemIcon_KantoStone[] = INCBIN_U32("graphics/items/icons/kanto_stone.4bpp.lz");
+const u32 gItemIconPalette_KantoStone[] = INCBIN_U32("graphics/items/icon_palettes/kanto_stone.gbapal.lz");
+
+const u32 gItemIcon_KalosStone[] = INCBIN_U32("graphics/items/icons/kalos_stone.4bpp.lz");
+const u32 gItemIconPalette_KalosStone[] = INCBIN_U32("graphics/items/icon_palettes/kalos_stone.gbapal.lz");
+
+const u32 gItemIcon_OddityStone[] = INCBIN_U32("graphics/items/icons/oddity_stone.4bpp.lz");
+const u32 gItemIconPalette_OddityStone[] = INCBIN_U32("graphics/items/icon_palettes/oddity_stone.gbapal.lz");
+
+const u32 gItemIcon_PaldeaStone[] = INCBIN_U32("graphics/items/icons/paldea_stone.4bpp.lz");
+const u32 gItemIconPalette_PaldeaStone[] = INCBIN_U32("graphics/items/icon_palettes/paldea_stone.gbapal.lz");
+
+const u32 gItemIcon_PastStone[] = INCBIN_U32("graphics/items/icons/past_stone.4bpp.lz");
+const u32 gItemIconPalette_PastStone[] = INCBIN_U32("graphics/items/icon_palettes/past_stone.gbapal.lz");
+
+const u32 gItemIcon_SinnohStone[] = INCBIN_U32("graphics/items/icons/sinnoh_stone.4bpp.lz");
+const u32 gItemIconPalette_SinnohStone[] = INCBIN_U32("graphics/items/icon_palettes/sinnoh_stone.gbapal.lz");
+
+const u32 gItemIcon_UnovaStone[] = INCBIN_U32("graphics/items/icons/unova_stone.4bpp.lz");
+const u32 gItemIconPalette_UnovaStone[] = INCBIN_U32("graphics/items/icon_palettes/unova_stone.gbapal.lz");
+
 // Nectars
 
 const u32 gItemIcon_RedNectar[] = INCBIN_U32("graphics/items/icons/red_nectar.4bpp.lz");

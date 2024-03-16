@@ -1336,6 +1336,71 @@ static const u8 sPurpleNectarDesc[] = _(
     "changes the form\n"
     "of certain Pokémon.");
 
+static const u8 sAlolaStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sFutureStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sGalarStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");    
+
+static const u8 sHisuiStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");    
+
+static const u8 sHoennStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sJohtoStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sKalosStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sKantoStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");
+
+static const u8 sOddityStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");    
+
+static const u8 sPaldeaStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");    
+
+static const u8 sPastStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");   
+
+static const u8 sSinnohStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");     
+
+static const u8 sUnovaStoneDesc[] = _(
+    "Makes certain\n"
+    "species of Pokémon\n"
+    "evolve.");    
+
 // Plates
 static const u8 sFlamePlateDesc[] = _(
     "A tablet that ups\n"
