@@ -2622,7 +2622,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Clobbopus, 0),
         .footprint = gMonFootprint_Clobbopus,
         LEARNSETS(Clobbopus),
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_TAUNT, SPECIES_GRAPPLOCT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRAPPLOCT}),
     },
 
     [SPECIES_GRAPPLOCT] =
@@ -3503,7 +3503,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Snom, 0),
         .footprint = gMonFootprint_Snom,
         LEARNSETS(Snom),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_FROSMOTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL,31, SPECIES_FROSMOTH}),
     },
 
     [SPECIES_FROSMOTH] =
@@ -3552,6 +3552,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Frosmoth, 0),
         .footprint = gMonFootprint_Frosmoth,
         LEARNSETS(Frosmoth),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KANTO_STONE, SPECIES_VENOMOTH}),
     },
 #endif //P_FAMILY_SNOM
 
@@ -4018,6 +4019,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Dracozolt, 1),
         .footprint = gMonFootprint_Dracozolt,
         LEARNSETS(Dracozolt),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_ARCTOVISH}),
     },
 #endif //P_FAMILY_DRACOZOLT
 
@@ -4066,6 +4068,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Arctozolt, 2),
         .footprint = gMonFootprint_Arctozolt,
         LEARNSETS(Arctozolt),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_DRACOVISH}),
     },
 #endif //P_FAMILY_ARCTOZOLT
 
@@ -4115,6 +4118,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Dracovish, 0),
         .footprint = gMonFootprint_Dracovish,
         LEARNSETS(Dracovish),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_ARCTOZOLT}),
     },
 #endif //P_FAMILY_DRACOVISH
 
@@ -4164,6 +4168,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Arctovish, 0),
         .footprint = gMonFootprint_Arctovish,
         LEARNSETS(Arctovish),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_DRACOZOLT}),
     },
 #endif //P_FAMILY_ARCTOVISH
 
@@ -4700,7 +4705,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .evolutions = EVOLUTION({EVO_DARK_SCROLL, 0, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
                                 {EVO_ITEM, ITEM_SCROLL_OF_DARKNESS, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
                                 {EVO_WATER_SCROLL, 0, SPECIES_URSHIFU_RAPID_STRIKE_STYLE},
-                                {EVO_ITEM, ITEM_SCROLL_OF_WATERS, SPECIES_URSHIFU_RAPID_STRIKE_STYLE}),
+                                {EVO_ITEM, ITEM_SCROLL_OF_WATERS, SPECIES_URSHIFU_RAPID_STRIKE_STYLE},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_URSHIFU_RAPID_STRIKE_STYLE},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE}),
     },
 
 #define URSHIFU_MISC_INFO(style)                                                        \
@@ -4757,6 +4764,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         PALETTES(UrshifuSingleStrikeStyle),
         ICON(Urshifu, 2),
         .formChangeTable = sUrshifuSingleStrikeFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_URSHIFU_RAPID_STRIKE_STYLE}),
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -4817,6 +4825,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         PALETTES(UrshifuRapidStrikeStyle),
         ICON(Urshifu, 2),
         .formChangeTable = sUrshifuRapidStrikeFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE}),
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -4969,6 +4978,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .footprint = gMonFootprint_Regieleki,
         LEARNSETS(Regieleki),
         .isLegendary = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_REGIROCK},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_REGICE},
+                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_REGIDRAGO},
+				                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_REGIGIGAS},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_REGISTEEL}),
     },
 #endif //P_FAMILY_REGIELEKI
 
@@ -5020,6 +5034,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Regidrago, 0),
         .footprint = gMonFootprint_Regidrago,
         LEARNSETS(Regidrago),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_REGIROCK},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_REGICE},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_REGIELEKI},
+				                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_REGIGIGAS},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_REGISTEEL}),
     },
 #endif //P_FAMILY_REGIDRAGO
 

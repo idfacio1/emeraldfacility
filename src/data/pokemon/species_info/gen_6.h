@@ -387,7 +387,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Frogadier, 0),
         .footprint = gMonFootprint_Frogadier,
         LEARNSETS(Frogadier),
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA},
+                                {EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_GRENINJA_ASH}),
     },
 
 #define GRENINJA_NORMAL_MISC_INFO           \
@@ -578,6 +579,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Diggersby, 2),
         .footprint = gMonFootprint_Diggersby,
         LEARNSETS(Diggersby),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_MAGEARNA}),
     },
 #endif //P_FAMILY_BUNNELBY
 
@@ -1193,7 +1195,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .footprint = gMonFootprint_Flabebe,                                     \
         LEARNSETS(Flabebe),                                                     \
         .formSpeciesIdTable = sFlabebeFormSpeciesIdTable,                       \
-        .evolutions = EVOLUTION({EVO_LEVEL, 19, SPECIES_FLOETTE_ ##FORM##_FLOWER})
+        .evolutions = EVOLUTION({EVO_LEVEL, 19, SPECIES_FLOETTE_ ##FORM##_FLOWER}
+                                {EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_FLOETTE_ETERNAL_FLOWER}),
+
 
     [SPECIES_FLABEBE_RED_FLOWER] =
     {
@@ -2377,6 +2381,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Malamar, 2),
         .footprint = gMonFootprint_Malamar,
         LEARNSETS(Malamar),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_NIHILEGO}),
     },
 #endif //P_FAMILY_INKAY
 
@@ -2818,7 +2823,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Tyrunt, 2),
         .footprint = gMonFootprint_Tyrunt,
         LEARNSETS(Tyrunt),
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 39, SPECIES_TYRANTRUM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_TYRANTRUM}),
     },
 
     [SPECIES_TYRANTRUM] =
@@ -2915,7 +2920,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Amaura, 0),
         .footprint = gMonFootprint_Amaura,
         LEARNSETS(Amaura),
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 39, SPECIES_AURORUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_AURORUS}),
     },
 
     [SPECIES_AURORUS] =
@@ -3168,7 +3173,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .footprint = gMonFootprint_Goomy,
         LEARNSETS(Goomy),
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
-                                {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}),
+                                {EVO_ITEM, ITEM_HISUI_STONE, SPECIES_SLIGGOO_HISUIAN}),
     },
 
 #define SLIGGOO_MISC_INFO                                       \
@@ -3221,8 +3226,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         PALETTES(Sliggoo),
         ICON(Sliggoo, 5),
         LEARNSETS(Sliggoo),
-        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA},
-                                {EVO_LEVEL_FOG, 50, SPECIES_GOODRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_GOODRA},
+                                {EVO_ITEM, ITEM_HISUI_STONE, SPECIES_GOODRA_HISUIAN}),
     },
 
 #define GOODRA_MISC_INFO                                        \
@@ -3274,6 +3279,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         PALETTES(Goodra),
         ICON(Goodra, 5),
         LEARNSETS(Goodra),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_HISUI_STONE, SPECIES_GOODRA_HISUIAN}),
     },
 
 #if P_HISUIAN_FORMS
@@ -3311,8 +3317,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(SliggooHisuian, 2),
         LEARNSETS(SliggooHisuian),
         .isHisuianForm = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVEL_RAIN, 50, SPECIES_GOODRA_HISUIAN},
-                                {EVO_LEVEL_FOG, 50, SPECIES_GOODRA_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_GOODRA_HISUIAN},
+                                {EVO_ITEM, ITEM_KALOS_STONE, SPECIES_SLIGGOO}),
     },
 
     [SPECIES_GOODRA_HISUIAN] =
@@ -3349,6 +3355,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(GoodraHisuian, 2),
         LEARNSETS(GoodraHisuian),
         .isHisuianForm = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KALOS_STONE, SPECIES_GOODRA}),
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GOOMY
@@ -3451,7 +3458,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Phantump, 1),
         .footprint = gMonFootprint_Phantump,
         LEARNSETS(Phantump),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_TREVENANT},
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_TREVENANT},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
     },
 
@@ -3553,7 +3560,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 13,
         BACK_PIC(PumpkabooAverage, 56, 48),
         .backPicYOffset = 13,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_AVERAGE},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOURGEIST_AVERAGE},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_AVERAGE}),
     },
 
@@ -3581,7 +3588,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 15,
         BACK_PIC(PumpkabooSmall, 56, 48),
         .backPicYOffset = 14,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SMALL},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOURGEIST_SMALL},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SMALL}),
     },
 
@@ -3609,7 +3616,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 12,
         BACK_PIC(PumpkabooLarge, 56, 48),
         .backPicYOffset = 13,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_LARGE},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOURGEIST_LARGE},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_LARGE}),
     },
 
@@ -3639,7 +3646,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 10,
         BACK_PIC(PumpkabooSuper, 56, 48),
         .backPicYOffset = 12,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SUPER},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GOURGEIST_SUPER},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
     },
 
@@ -3831,7 +3838,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .footprint = gMonFootprint_Bergmite,
         LEARNSETS(Bergmite),
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AVALUGG},
-                                {EVO_NONE, 0, SPECIES_AVALUGG_HISUIAN}),
+                                {EVO_ITEM, ITEM_HISUI_STONE, SPECIES_AVALUGG_HISUIAN}),
     },
 
 #define AVALUGG_MISC_INFO                               \
@@ -3884,6 +3891,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         PALETTES(Avalugg),
         ICON(Avalugg, 0),
         LEARNSETS(Avalugg),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_HISUI_STONE, SPECIES_AVALUGG_HISUIAN}),
     },
 
 #if P_HISUIAN_FORMS
@@ -3919,6 +3927,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(AvaluggHisuian, 5),
         LEARNSETS(AvaluggHisuian),
         .isHisuianForm = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KALOS_STONE, SPECIES_AVALUGG}),
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_BERGMITE

@@ -99,7 +99,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .footprint = gMonFootprint_Dartrix,
         LEARNSETS(Dartrix),
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE},
-                                {EVO_NONE, 0, SPECIES_DECIDUEYE_HISUIAN}),
+                                {EVO_ITEM, ITEM_HISUI_STONE, SPECIES_DECIDUEYE_HISUIAN}),
     },
 
 #define DECIDUEYE_MISC_INFO                                     \
@@ -151,6 +151,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         PALETTES(Decidueye),
         ICON(Decidueye, 1),
         LEARNSETS(Decidueye),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_HISUI_STONE, SPECIES_DECIDUEYE_HISUIAN}),
     },
 
 #if P_HISUIAN_FORMS
@@ -182,6 +183,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(DecidueyeHisuian, 0),
         LEARNSETS(DecidueyeHisuian),
         .isHisuianForm = TRUE,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_DECIDUEYE}),
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_ROWLET
@@ -720,6 +722,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Gumshoos, 2),
         .footprint = gMonFootprint_Gumshoos,
         LEARNSETS(Gumshoos),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_GUMSHOOS_TOTEM}),
     },
 #endif //P_FAMILY_YUNGOOS
 
@@ -868,6 +871,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Vikavolt, 0),
         .footprint = gMonFootprint_Vikavolt,
         LEARNSETS(Vikavolt),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_VIKAVOLT_TOTEM}),
     },
 #endif //P_FAMILY_GRUBBIN
 
@@ -1185,6 +1189,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Ribombee, 2),
         .footprint = gMonFootprint_Ribombee,
         LEARNSETS(Ribombee),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_RIBOMBEE_TOTEM}),
     },
 #endif //P_FAMILY_CUTIEFLY
 
@@ -1234,8 +1239,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FRONT_PIC(Rockruff, 37, 39),
         BACK_PIC(Rockruff, 64, 56),
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 25, SPECIES_LYCANROC_MIDDAY},
-                                {EVO_LEVEL_NIGHT, 25, SPECIES_LYCANROC_MIDNIGHT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LYCANROC_MIDDAY},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_LYCANROC_MIDNIGHT},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_LYCANROC_DUSK}),
     },
 
     [SPECIES_ROCKRUFF_OWN_TEMPO] =
@@ -1245,7 +1251,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FRONT_PIC(Rockruff, 40, 48),
         BACK_PIC(Rockruff, 64, 56),
         //.backAnimId = BACK_ANIM_NONE,
-        .evolutions = EVOLUTION({EVO_LEVEL_DUSK, 25, SPECIES_LYCANROC_DUSK}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_LYCANROC_DUSK}),
     },
 
 #define LYCANROC_MISC_INFO                                  \
@@ -1297,6 +1303,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         PALETTES(LycanrocMidday),
         ICON(LycanrocMidday, 2),
         LEARNSETS(LycanrocMidday),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_LYCANROC_MIDNIGHT},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_LYCANROC_DUSK}),
     },
 
     [SPECIES_LYCANROC_MIDNIGHT] =
@@ -1326,6 +1334,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         PALETTES(LycanrocMidnight),
         ICON(LycanrocMidnight, 0),
         LEARNSETS(LycanrocMidnight),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LYCANROC_MIDDAY},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_LYCANROC_DUSK}),
     },
 
     [SPECIES_LYCANROC_DUSK] =
@@ -1355,6 +1365,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         PALETTES(LycanrocDusk),
         ICON(LycanrocDusk, 0),
         LEARNSETS(LycanrocDusk),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LYCANROC_MIDDAY},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_LYCANROC_MIDNIGHT}),
     },
 #endif //P_FAMILY_ROCKRUFF
 
@@ -1410,6 +1422,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(WishiwashiSolo),
         ICON(WishiwashiSolo, 2),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_WISHIWASHI_SCHOOL}),
     },
 
     [SPECIES_WISHIWASHI_SCHOOL] =
@@ -1438,6 +1451,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(WishiwashiSchool),
         ICON(WishiwashiSchool, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_WISHIWASHI_SOLO}),
     },
 #endif //P_FAMILY_WISHIWASHI
 
@@ -1735,6 +1749,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Araquanid, 2),
         .footprint = gMonFootprint_Araquanid,
         LEARNSETS(Araquanid),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_ARAQUANID_TOTEM}),
     },
 #endif //P_FAMILY_DEWPIDER
 
@@ -1952,7 +1967,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .expYield = 64,
         .evYield_Speed = 1,
         .itemRare = ITEM_SMOKE_BALL,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -1985,7 +2000,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Salandit, 2),
         .footprint = gMonFootprint_Salandit,
         LEARNSETS(Salandit),
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 33, SPECIES_SALAZZLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SALAZZLE}),
     },
 
     [SPECIES_SALAZZLE] =
@@ -2001,7 +2016,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .expYield = 168,
         .evYield_Speed = 2,
         .itemRare = ITEM_SMOKE_BALL,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -2034,6 +2049,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Salazzle, 0),
         .footprint = gMonFootprint_Salazzle,
         LEARNSETS(Salazzle),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_SALAZZLE_TOTEM}),
     },
 #endif //P_FAMILY_SALANDIT
 
@@ -2231,7 +2247,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Steenee, 1),
         .footprint = gMonFootprint_Steenee,
         LEARNSETS(Steenee),
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_STOMP, SPECIES_TSAREENA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_TSAREENA}),
     },
 
     [SPECIES_TSAREENA] =
@@ -2382,6 +2398,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Oranguru, 0),
         .footprint = gMonFootprint_Oranguru,
         LEARNSETS(Oranguru),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_PASSIMIAN}),
     },
 #endif //P_FAMILY_ORANGURU
 
@@ -2431,6 +2448,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Passimian, 1),
         .footprint = gMonFootprint_Passimian,
         LEARNSETS(Passimian),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_ORANGURU}),
     },
 #endif //P_FAMILY_PASSIMIAN
 
@@ -2726,7 +2744,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TypeNull, 0),
         .footprint = gMonFootprint_Type_Null,
         LEARNSETS(TypeNull),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SILVALLY_NORMAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SILVALLY_NORMAL}),
     },
 
 #define SILVALLY_SPECIES_INFO(type, palette)                                            \
@@ -3036,6 +3054,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Togedemaru, 2),
         .footprint = gMonFootprint_Togedemaru,
         LEARNSETS(Togedemaru),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_TOGEDEMARU_TOTEM}),
     },
 #endif //P_FAMILY_TOGEDEMARU
 
@@ -3409,6 +3428,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(KommoO, 2),
         .footprint = gMonFootprint_KommoO,
         LEARNSETS(KommoO),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_KOMMO_O_TOTEM}),
     },
 #endif //P_FAMILY_JANGMO_O
 
@@ -3460,6 +3480,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TapuKoko, 0),
         .footprint = gMonFootprint_Tapu_Koko,
         LEARNSETS(TapuKoko),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TAPU_LELE},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_TAPU_BULU},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_TAPU_FINI}),
     },
 #endif //P_FAMILY_TAPU_KOKO
 
@@ -3511,6 +3534,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TapuLele, 0),
         .footprint = gMonFootprint_Tapu_Lele,
         LEARNSETS(TapuLele),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_TAPU_KOKO},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_TAPU_BULU},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_TAPU_FINI}),
     },
 #endif //P_FAMILY_TAPU_LELE
 
@@ -3562,6 +3588,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TapuBulu, 2),
         .footprint = gMonFootprint_Tapu_Bulu,
         LEARNSETS(TapuBulu),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_TAPU_KOKO},
+                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TAPU_LELE},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_TAPU_FINI}),
     },
 #endif //P_FAMILY_TAPU_BULU
 
@@ -3614,6 +3643,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(TapuFini, 0),
         .footprint = gMonFootprint_Tapu_Fini,
         LEARNSETS(TapuFini),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_TAPU_KOKO},
+                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TAPU_LELE},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_TAPU_BULU}),
     },
 #endif //P_FAMILY_TAPU_FINI
 
@@ -3716,8 +3748,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Cosmoem, 0),
         .footprint = gMonFootprint_Cosmoem,
         LEARNSETS(Cosmoem),
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 53, SPECIES_SOLGALEO},
-                                {EVO_LEVEL_NIGHT, 53, SPECIES_LUNALA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SOLGALEO},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_LUNALA}),
     },
 
     [SPECIES_SOLGALEO] =
@@ -3766,6 +3798,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Solgaleo, 0),
         .footprint = gMonFootprint_Solgaleo,
         LEARNSETS(Solgaleo),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_LUNALA}),
     },
 
     [SPECIES_LUNALA] =
@@ -3815,6 +3848,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Lunala, 2),
         .footprint = gMonFootprint_Lunala,
         LEARNSETS(Lunala),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SOLGALEO}),
     },
 #endif //P_FAMILY_COSMOG
 
@@ -4756,6 +4790,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         ICON(Meltan, 2),
         .footprint = gMonFootprint_Meltan,
         LEARNSETS(Meltan),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MELMETAL}),
     },
 
 #define MELMETAL_MISC_INFO                                                              \

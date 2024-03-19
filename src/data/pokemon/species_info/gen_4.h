@@ -2061,7 +2061,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Buneary, 2),
         .footprint = gMonFootprint_Buneary,
         LEARNSETS(Buneary),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_LOPUNNY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_LOPUNNY}),
     },
 
 #define LOPUNNY_MISC_INFO                                       \
@@ -2448,6 +2448,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Bronzong, 0),
         .footprint = gMonFootprint_Bronzong,
         LEARNSETS(Bronzong),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_CELESTEELA}),
     },
 #endif //P_FAMILY_BRONZOR
 
@@ -2783,7 +2784,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Riolu, 2),
         .footprint = gMonFootprint_Riolu,
         LEARNSETS(Riolu),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LUCARIO}),
     },
 
 #define LUCARIO_MISC_INFO                                       \
@@ -3533,6 +3534,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         PALETTES(Rotom),
         ICON(Rotom, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_ROTOM_WASH},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_ROTOM_FROST},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_ROTOM_FAN},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ROTOM_MOW}),
     },
 
 #define ROTOM_APPLIANCE_INFO(form)                                  \
@@ -3564,6 +3570,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         PALETTES(RotomHeat),
         ICON(RotomHeat, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SINNOH_STONE, SPECIES_ROTOM},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_ROTOM_WASH},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_ROTOM_FROST},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_ROTOM_FAN},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ROTOM_MOW}),
     },
 
     [SPECIES_ROTOM_WASH] =
@@ -3587,6 +3598,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         PALETTES(RotomWash),
         ICON(RotomWash, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SINNOH_STONE, SPECIES_ROTOM},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_ROTOM_FROST},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_ROTOM_FAN},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ROTOM_MOW}),
     },
 
     [SPECIES_ROTOM_FROST] =
@@ -3609,6 +3625,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(RotomFrost),
         ICON(RotomFrost, 5),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SINNOH_STONE, SPECIES_ROTOM},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_ROTOM_WASH},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_ROTOM_FAN},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ROTOM_MOW}),
     },
 
     [SPECIES_ROTOM_FAN] =
@@ -3632,6 +3653,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         PALETTES(RotomFan),
         ICON(RotomFan, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SINNOH_STONE, SPECIES_ROTOM},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_ROTOM_WASH},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_ROTOM_FROST},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ROTOM_MOW}),
     },
 
     [SPECIES_ROTOM_MOW] =
@@ -3654,6 +3680,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         PALETTES(RotomMow),
         ICON(RotomMow, 0),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SINNOH_STONE, SPECIES_ROTOM},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_ROTOM_WASH},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_ROTOM_FROST},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ROTOM_HEAT}),
     },
 #endif //P_FAMILY_ROTOM
 
@@ -3866,6 +3897,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         PALETTES(Dialga),
         ICON(Dialga, 2),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_PALKIA}),
     },
 
     [SPECIES_DIALGA_ORIGIN] =
@@ -3952,6 +3984,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backAnimId = BACK_ANIM_H_SHAKE,
         PALETTES(Palkia),
         ICON(Palkia, 2),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_DIALGA}),
     },
 
     [SPECIES_PALKIA_ORIGIN] =
@@ -4083,6 +4116,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Regigigas, 0),
         .footprint = gMonFootprint_Regigigas,
         LEARNSETS(Regigigas),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_REGIROCK},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_REGICE},
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_REGIELEKI},
+                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_REGIDRAGO},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_REGISTEEL}),
     },
 #endif //P_FAMILY_REGIGIGAS
 
