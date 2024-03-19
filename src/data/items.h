@@ -3886,7 +3886,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Alola Stone"),
         .price = 3000,
-        .description = sAlolaStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3897,7 +3897,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Future Stone"),
         .price = 3000,
-        .description = sFutureStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3908,7 +3908,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Galar Stone"),
         .price = 3000,
-        .description = sGalarStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3919,7 +3919,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Hisui Stone"),
         .price = 3000,
-        .description = sHisuiStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3930,7 +3930,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Hoenn Stone"),
         .price = 3000,
-        .description = sHoennStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3941,7 +3941,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Johto Stone"),
         .price = 3000,
-        .description = sJohtoStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3952,7 +3952,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Kalos Stone"),
         .price = 3000,
-        .description = sKalosStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3963,7 +3963,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Kanto Stone"),
         .price = 3000,
-        .description = sKantoStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3974,7 +3974,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Oddity Stone"),
         .price = 3000,
-        .description = sOddityStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3985,7 +3985,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Paldea Stone"),
         .price = 3000,
-        .description = sPaldeaStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -3996,7 +3996,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Past Stone"),
         .price = 3000,
-        .description = sPastStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -4007,7 +4007,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Sinnoh Stone"),
         .price = 3000,
-        .description = sSinnohStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -4018,7 +4018,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Unova Stone"),
         .price = 3000,
-        .description = sUnovaStoneDesc,
+        .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
