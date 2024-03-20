@@ -3891,6 +3891,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_FUTURE_STONE] =
@@ -3902,6 +3903,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_GALAR_STONE] =
@@ -3913,6 +3915,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_HISUI_STONE] =
@@ -3924,6 +3927,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_HOENN_STONE] =
@@ -3935,6 +3939,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_JOHTO_STONE] =
@@ -3946,6 +3951,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_KALOS_STONE] =
@@ -3957,6 +3963,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },    
 
     [ITEM_KANTO_STONE] =
@@ -3968,6 +3975,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_ODDITY_STONE] =
@@ -3979,6 +3987,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 200,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_PALDEA_STONE] =
@@ -3990,6 +3999,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_PAST_STONE] =
@@ -4001,6 +4011,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
     [ITEM_SINNOH_STONE] =
@@ -4012,6 +4023,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },    
 
     [ITEM_UNOVA_STONE] =
@@ -4023,6 +4035,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
+        .effect = gItemEffect_EvoItem,
     },
 
 // Nectars
