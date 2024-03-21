@@ -5771,7 +5771,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isUltraBeast = TRUE,
         .levelUpLearnset = sPoipoleLevelUpLearnset,
         .teachableLearnset = sPoipoleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_DRAGON_PULSE, SPECIES_NAGANADEL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_NAGANADEL}),
     },
 
     [SPECIES_NAGANADEL] =
