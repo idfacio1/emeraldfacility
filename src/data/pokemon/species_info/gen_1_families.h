@@ -1330,7 +1330,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBeedrillTeachableLearnset,
         .formSpeciesIdTable = sBeedrillFormSpeciesIdTable,
         .formChangeTable = sBeedrillFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_BUZZWOLE}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -2352,8 +2351,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_ROCK_STAR] =
@@ -2404,8 +2401,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_BELLE] =
@@ -2457,8 +2452,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_POP_STAR] =
@@ -2510,8 +2503,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_PH_D] =
@@ -2562,8 +2553,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_LIBRE] =
@@ -2614,8 +2603,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #endif //P_COSPLAY_PIKACHU_FORMS
@@ -2674,8 +2661,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_HOENN_CAP] =
@@ -2730,8 +2715,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_SINNOH_CAP] =
@@ -2786,8 +2769,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_UNOVA_CAP] =
@@ -2842,8 +2823,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_KALOS_CAP] =
@@ -2898,8 +2877,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_ALOLA_CAP] =
@@ -2954,8 +2931,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_PARTNER_CAP] =
@@ -3011,8 +2986,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_WORLD_CAP] =
@@ -3067,8 +3040,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #endif //P_CAP_PIKACHU_FORMS
@@ -3190,8 +3161,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPikachuLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RAICHU_ALOLAN}),
     },
 
 #define RAICHU_SPEED (P_UPDATED_STATS >= GEN_6 ? 110 : 100)
