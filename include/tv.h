@@ -61,6 +61,5 @@ void ResetGabbyAndTy(void);
 u8 CheckForPlayersHouseNews(void);
 bool8 IsGabbyAndTyShowOnTheAir(void);
 void TryPutTrainerFanClubOnAir(void);
-void ChangePokemonNickname(void);
 
 #endif //GUARD_TV_H
