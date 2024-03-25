@@ -29,6 +29,7 @@ bool16 HasAllHoennMons(void);
 void ResetPokedexScrollPositions(void);
 bool16 HasAllMons(void);
 void CB2_OpenPokedex(void);
+const u8 *GetPokedexCategoryName(u16 dexNum);
 void PrintMonMeasurements(u16 species, u32 owned);
 u8* ConvertMonHeightToString(u32 height);
 u8* ConvertMonWeightToString(u32 weight);
