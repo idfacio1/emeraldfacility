@@ -4417,7 +4417,7 @@
       "width": 20,
       "height": 25,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BattleDome",
+      "secondary_tileset": "gTileset_OceanicMuseum",
       "border_filepath": "data/layouts/BirchsNewLab/border.bin",
       "blockdata_filepath": "data/layouts/BirchsNewLab/map.bin"
     },

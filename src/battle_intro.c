@@ -12,7 +12,6 @@
 #include "constants/battle_partner.h"
 #include "constants/trainers.h"
 
-static void BattleIntroSlide1(u8);
 static void BattleIntroSlide2(u8);
 static void BattleIntroSlide3(u8);
 static void BattleIntroSlideLink(u8);
@@ -20,19 +19,7 @@ static void BattleIntroSlidePartner(u8);
 
 static const u8 sBattleAnimBgCnts[] = {REG_OFFSET_BG0CNT, REG_OFFSET_BG1CNT, REG_OFFSET_BG2CNT, REG_OFFSET_BG3CNT};
 
-static const TaskFunc sBattleIntroSlideFuncs[] =
-{
-    [BATTLE_TERRAIN_GRASS]      = BattleIntroSlide1,
-    [BATTLE_TERRAIN_LONG_GRASS] = BattleIntroSlide1,
-    [BATTLE_TERRAIN_SAND]       = BattleIntroSlide2,
-    [BATTLE_TERRAIN_UNDERWATER] = BattleIntroSlide2,
-    [BATTLE_TERRAIN_WATER]      = BattleIntroSlide2,
-    [BATTLE_TERRAIN_POND]       = BattleIntroSlide1,
-    [BATTLE_TERRAIN_MOUNTAIN]   = BattleIntroSlide1,
-    [BATTLE_TERRAIN_CAVE]       = BattleIntroSlide1,
-    [BATTLE_TERRAIN_BUILDING]   = BattleIntroSlide3,
-    [BATTLE_TERRAIN_PLAIN]      = BattleIntroSlide3,
-};
+static void BattleIntroNoSlide(u8);
 
 void SetAnimBgAttribute(u8 bgId, u8 attributeId, u8 value)
 {
@@ -123,7 +110,7 @@ void HandleIntroSlide(u8 terrain)
     }
     else
     {
-        taskId = CreateTask(sBattleIntroSlideFuncs[terrain], 0);
+        taskId = CreateTask(BattleIntroNoSlide, 0);
     }
 
     gTasks[taskId].tState = 0;
@@ -149,11 +136,8 @@ static void BattleIntroSlideEnd(u8 taskId)
     SetGpuReg(REG_OFFSET_WINOUT, WINOUT_WIN01_BG_ALL | WINOUT_WIN01_OBJ | WINOUT_WIN01_CLR | WINOUT_WINOBJ_BG_ALL | WINOUT_WINOBJ_OBJ | WINOUT_WINOBJ_CLR);
 }
 
-static void BattleIntroSlide1(u8 taskId)
+static void BattleIntroNoSlide(u8 taskId)
 {
-    int i;
-
-    gBattle_BG1_X += 6;
     switch (gTasks[taskId].tState)
     {
     case 0:
@@ -161,72 +145,38 @@ static void BattleIntroSlide1(u8 taskId)
         {
             gTasks[taskId].data[2] = 16;
             gTasks[taskId].tState++;
+            gIntroSlideFlags &= ~1;
         }
         else
         {
             gTasks[taskId].data[2] = 1;
             gTasks[taskId].tState++;
-        }
-        break;
-    case 1:
-        if (--gTasks[taskId].data[2] == 0)
-        {
-            gTasks[taskId].tState++;
-            SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_BG_ALL | WININ_WIN0_OBJ | WININ_WIN0_CLR);
-        }
-        break;
-    case 2:
-        gBattle_WIN0V -= 0xFF;
-        if ((gBattle_WIN0V & 0xFF00) == 0x3000)
-        {
-            gTasks[taskId].tState++;
-            gTasks[taskId].data[2] = DISPLAY_WIDTH;
-            gTasks[taskId].data[3] = 32;
             gIntroSlideFlags &= ~1;
         }
         break;
-    case 3:
-        if (gTasks[taskId].data[3])
-        {
-            gTasks[taskId].data[3]--;
-        }
-        else
-        {
-            if (gTasks[taskId].tTerrain == BATTLE_TERRAIN_LONG_GRASS)
-            {
-                if (gBattle_BG1_Y != 0xFFB0)
-                    gBattle_BG1_Y -= 2;
-            }
-            else
-            {
-                if (gBattle_BG1_Y != 0xFFC8)
-                    gBattle_BG1_Y -= 1;
-            }
-        }
-
-        if (gBattle_WIN0V & 0xFF00)
-            gBattle_WIN0V -= 0x3FC;
-
-        if (gTasks[taskId].data[2])
-            gTasks[taskId].data[2] -= 2;
-
-        // Scanline settings have already been set in CB2_InitBattleInternal()
-        for (i = 0; i < DISPLAY_HEIGHT / 2; i++)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = gTasks[taskId].data[2];
-
-        for (; i < DISPLAY_HEIGHT; i++)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = -gTasks[taskId].data[2];
-
+    case 1:
+        gTasks[taskId].data[2]--;
         if (gTasks[taskId].data[2] == 0)
         {
-            gScanlineEffect.state = 3;
             gTasks[taskId].tState++;
-            CpuFill32(0, (void *)BG_SCREEN_ADDR(28), BG_SCREEN_SIZE);
-            SetBgAttribute(1, BG_ATTR_CHARBASEINDEX, 0);
-            SetBgAttribute(2, BG_ATTR_CHARBASEINDEX, 0);
-            SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(28) | BGCNT_TXT256x512);
-            SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(30) | BGCNT_TXT512x256);
+            SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_BG_ALL | WININ_WIN0_OBJ | WININ_WIN0_CLR);
+            gScanlineEffect.state = 3;
         }
+        break;
+    case 2:
+        gBattle_WIN0V -= 0xFF * 2;
+        if ((gBattle_WIN0V & 0xFF00) == 0)
+        {
+            gTasks[taskId].tState++;
+        }
+        break;
+    case 3:
+        gTasks[taskId].tState++;
+        CpuFill32(0, (void *)BG_SCREEN_ADDR(28), BG_SCREEN_SIZE);
+        SetBgAttribute(1, BG_ATTR_CHARBASEINDEX, 0);
+        SetBgAttribute(2, BG_ATTR_CHARBASEINDEX, 0);
+        SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(28) | BGCNT_TXT256x512);
+        SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(30) | BGCNT_TXT512x256);
         break;
     case 4:
         BattleIntroSlideEnd(taskId);

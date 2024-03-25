@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 14,
+      "x": 6,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 13,
+      "x": 7,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 15,
+      "x": 5,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -55,7 +55,33 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA_STILL",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GROUDON_FRONT",
       "x": 1,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KYOGRE_FRONT",
+      "x": 18,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -70,7 +96,7 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 3,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_EMERALD_FACILITY_HUB",
       "dest_warp_id": "5"
@@ -119,7 +145,7 @@
     },
     {
       "x": 9,
-      "y": 3,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_EMERALD_FACILITY_HUB",
       "dest_warp_id": "5"

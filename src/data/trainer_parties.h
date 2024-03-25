@@ -3975,14 +3975,9 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .lvl = 50,
+    .lvl = 5,
     .species = SPECIES_POOCHYENA,
     .ability = ABILITY_INTIMIDATE,
-    .isShiny = TRUE,
-    },
-    {
-    .lvl = 100,
-    .species = SPECIES_UNOWN,
     }
 };
 

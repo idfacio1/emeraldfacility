@@ -1330,6 +1330,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBeedrillTeachableLearnset,
         .formSpeciesIdTable = sBeedrillFormSpeciesIdTable,
         .formChangeTable = sBeedrillFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_BUZZWOLE}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -1680,7 +1681,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRattataLevelUpLearnset,
         .teachableLearnset = sRattataTeachableLearnset,
         .formSpeciesIdTable = sRattataFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE},
+                                {EVO_ITEM, ITEM_ALOLA_STONE, SPECIES_RATTATA_ALOLAN}),
     },
 
     [SPECIES_RATICATE] =
