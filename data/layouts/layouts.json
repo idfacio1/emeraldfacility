@@ -4414,10 +4414,10 @@
     {
       "id": "LAYOUT_BIRCHS_NEW_LAB",
       "name": "BirchsNewLab_Layout",
-      "width": 20,
-      "height": 25,
+      "width": 19,
+      "height": 28,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
+      "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/BirchsNewLab/border.bin",
       "blockdata_filepath": "data/layouts/BirchsNewLab/map.bin"
     },
@@ -4480,6 +4480,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/EmeraldFacilityCanteen/border.bin",
       "blockdata_filepath": "data/layouts/EmeraldFacilityCanteen/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARK_ROOM",
+      "name": "DarkRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/DarkRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DarkRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOOR_1",
+      "name": "Floor_1_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Floor_1/border.bin",
+      "blockdata_filepath": "data/layouts/Floor_1/map.bin"
     }
   ]
 }

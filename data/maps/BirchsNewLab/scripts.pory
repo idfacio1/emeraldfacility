@@ -1,0 +1,19 @@
+mapscripts BirchsNewLab_MapScripts {}
+
+script BirchsNewLab_EventScript_StarterCase{
+
+    lockall
+    msgbox ("Choose your starter.")
+        callnative(StartNewPokeballCaseUI)
+         waitstate
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+                playfanfare(MUS_OBTAIN_ITEM)
+                msgbox("You have chosen your starter!")
+                removeobject(1)
+                setflag(FLAG_UNUSED_0x020)
+            }                    
+    waitmessage
+    releaseall
+    end
+    
+}

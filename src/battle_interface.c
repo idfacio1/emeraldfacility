@@ -2615,7 +2615,7 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
 
     if (whichBar == HEALTH_BAR) // health bar
     {
-        u16 hpFraction = B_FAST_HP_DRAIN == FALSE ? 1 : max(gBattleSpritesDataPtr->battleBars[battlerId].maxValue / B_HEALTHBAR_PIXELS, 1);
+        u16 hpFraction = B_FAST_HP_DRAIN == TRUE ? 1 : max(gBattleSpritesDataPtr->battleBars[battlerId].maxValue / B_HEALTHBAR_PIXELS, 1);
         currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battlerId].maxValue,
                     gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
                     gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,

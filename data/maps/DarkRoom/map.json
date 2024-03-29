@@ -1,0 +1,41 @@
+{
+  "id": "MAP_DARK_ROOM",
+  "name": "DarkRoom",
+  "layout": "LAYOUT_DARK_ROOM",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_BIRCHS_NEW_LAB",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_DARK_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

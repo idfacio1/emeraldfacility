@@ -1776,7 +1776,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCombeeLevelUpLearnset,
         .teachableLearnset = sCombeeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 21, SPECIES_VESPIQUEN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_VESPIQUEN}),
     },
 
     [SPECIES_VESPIQUEN] =
@@ -2544,7 +2544,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Buneary)
         .levelUpLearnset = sBunearyLevelUpLearnset,
         .teachableLearnset = sBunearyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_LOPUNNY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_LOPUNNY}),
     },
 
     [SPECIES_LOPUNNY] =
@@ -2982,6 +2982,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Bronzong)
         .levelUpLearnset = sBronzongLevelUpLearnset,
         .teachableLearnset = sBronzongTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_CELESTEELA}),
     },
 #endif //P_FAMILY_BRONZOR
 
@@ -3381,7 +3382,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Riolu)
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LUCARIO}),
     },
 
     [SPECIES_LUCARIO] =

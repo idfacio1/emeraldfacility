@@ -106,7 +106,9 @@
     "EmeraldFacilitySafariZoneEntrance",
     "EmeraldFacilityShopping",
     "EmeraldFacilityDorms",
-    "EmeraldFacilityElevator"
+    "EmeraldFacilityElevator",
+    "DarkRoom",
+    "Floor_1"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
