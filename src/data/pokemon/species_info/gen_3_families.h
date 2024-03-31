@@ -2463,6 +2463,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Masquerain)
         .levelUpLearnset = sMasquerainLevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ODDITY_STONE, SPECIES_PHEROMOSA}),
     },
 #endif //P_FAMILY_SURSKIT
 
