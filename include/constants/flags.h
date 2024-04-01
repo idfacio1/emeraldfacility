@@ -42,8 +42,8 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Givemon Test Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define FLAG_UNUSED_0x020    0x20 // Givemon Birch Case Working
+#define FLAG_PARTY_MOVES    0x21 // Party Moves Move Relearner in Start Menu
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
