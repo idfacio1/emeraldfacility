@@ -108,7 +108,8 @@
     "EmeraldFacilityDorms",
     "EmeraldFacilityElevator",
     "DarkRoom",
-    "Floor_1"
+    "Floor_1",
+    "Floor_2"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

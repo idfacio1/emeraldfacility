@@ -1089,3 +1089,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DarkRoom/scripts.inc"
 
 	.include "data/maps/Floor_1/scripts.inc"
+
+	.include "data/maps/Floor_2/scripts.inc"

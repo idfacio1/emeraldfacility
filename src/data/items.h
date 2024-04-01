@@ -3976,6 +3976,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
+        
     },
 
     [ITEM_ODDITY_STONE] =

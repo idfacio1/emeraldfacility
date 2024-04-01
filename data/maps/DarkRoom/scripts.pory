@@ -1,1 +1,16 @@
-mapscripts DarkRoom_MapScripts {}
+mapscripts DarkRoom_MapScripts {
+    MAP_SCRIPT_ON_LOAD: DarkRoom_EventScript_HidePlayer
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0 {
+            callnative(StartNewPokeballCaseUI)
+            waitstate
+            //how to end waitstate (release?) on selection and prevent exit with no selection
+        }
+    ]
+}
+
+script DarkRoom_EventScript_HidePlayer{ //what command hides sprites? Is this needed if the UI loads on frame 1?
+        
+
+}

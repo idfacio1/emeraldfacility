@@ -4495,11 +4495,21 @@
       "id": "LAYOUT_FLOOR_1",
       "name": "Floor_1_Layout",
       "width": 20,
-      "height": 30,
-      "primary_tileset": "gTileset_Building",
+      "height": 40,
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/Floor_1/border.bin",
       "blockdata_filepath": "data/layouts/Floor_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOOR_2",
+      "name": "Floor_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/Floor_2/border.bin",
+      "blockdata_filepath": "data/layouts/Floor_2/map.bin"
     }
   ]
 }

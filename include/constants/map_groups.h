@@ -79,6 +79,7 @@
 #define MAP_EMERALD_FACILITY_ELEVATOR             (9 | (1 << 8))
 #define MAP_DARK_ROOM                             (10 | (1 << 8))
 #define MAP_FLOOR_1                               (11 | (1 << 8))
+#define MAP_FLOOR_2                               (12 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

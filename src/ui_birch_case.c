@@ -143,6 +143,8 @@ static const struct MonChoiceData sStarterChoices[9] =
     [BALL_MIDDLE_SECOND]    = {SPECIES_BULBASAUR, 5},
     [BALL_BOTTOM_FIRST]     = {SPECIES_CHARMANDER, 5},
     [BALL_BOTTOM_SECOND]    = {SPECIES_NONE, 5},
+
+    
 };
 
 //==========EWRAM==========//
