@@ -2,44 +2,44 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(FALSE_SWIPE) \
-    F(MEAN_LOOK) \
-    F(BATON_PASS) \
-    F(U_TURN) \
-    F(FLIP_TURN) \
-    F(VOLT_SWITCH) \
-    F(HAIL) \
-    F(SANDSTORM) \
-    F(SNOWSCAPE) \
-    F(RAIN_DANCE) \
-    F(SUNNY_DAY) \
-    F(ELECTRIC_TERRAIN) \
-    F(MISTY_TERRAIN) \
-    F(PSYCHIC_TERRAIN) \
-    F(GRASSY_TERRAIN) \
-    F(TAILWIND) \
-    F(PROTECT) \
-    F(LIGHT_SCREEN) \
-    F(REFLECT) \
-    F(SAFEGUARD) \
+    F(FOCUS_PUNCH) \
+    F(DRAGON_CLAW) \
+    F(WATER_PULSE) \
     F(CALM_MIND) \
+    F(ROAR) \
+    F(TOXIC) \
+    F(HAIL) \
     F(BULK_UP) \
-    F(DOUBLE_TEAM) \
-    F(DISABLE) \
-    F(ENCORE) \
+    F(BULLET_SEED) \
+    F(HIDDEN_POWER) \
+    F(SUNNY_DAY) \
     F(TAUNT) \
-    F(REST) \
-    F(ROOST) \
-    F(SUBSTITUTE) \
-    F(ENERGY_BALL) \
-    F(SOLAR_BEAM) \
-    F(SOLAR_BLADE) \
+    F(ICE_BEAM) \
+    F(BLIZZARD) \
+    F(HYPER_BEAM) \
+    F(LIGHT_SCREEN) \
+    F(PROTECT) \
+    F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
-    F(FIRE_BLAST) \
+    F(SAFEGUARD) \
+    F(FRUSTRATION) \
+    F(SOLAR_BEAM) \
+    F(IRON_TAIL) \
+    F(THUNDERBOLT) \
+    F(THUNDER) \
+    F(EARTHQUAKE) \
+    F(RETURN) \
+    F(DIG) \
+    F(PSYCHIC) \
+    F(SHADOW_BALL) \
+    F(BRICK_BREAK) \
+    F(DOUBLE_TEAM) \
+    F(REFLECT) \
+    F(SHOCK_WAVE) \
     F(FLAMETHROWER) \
-    F(FLARE_BLITZ) \
-    F(OVERHEAT) \
-    F(SCALD) \
+    F(SLUDGE_BOMB) \
+    F(SANDSTORM) \
+    F(FIRE_BLAST) \
     F(ROCK_TOMB) \
     F(AERIAL_ACE) \
     F(TORMENT) \
