@@ -153,4 +153,3 @@
 	.include "src/battle_controller_player.o"
 	.include "src/pokedex_plus_hgss.o"
 	.include "src/ui_birch_case.o"
-	.include "src/ui_stat_editor.o"
