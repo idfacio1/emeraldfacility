@@ -4435,16 +4435,16 @@ static void UpdatePartyMonAilmentGfx(u8 status, struct PartyMenuBox *menuBox)
 }
 
 
-static void ChangePokemonStatsPartyScreen_CB(void)
+void ChangePokemonStatsPartyScreen_CB(void)
 {
     CB2_ReturnToPartyMenuFromSummaryScreen();
 }
 
-static void ChangePokemonStatsPartyScreen(void)
+void ChangePokemonStatsPartyScreen(void)
 {
     StatEditor_Init(ChangePokemonStatsPartyScreen_CB);
 }
-static void CursorCb_StatEdit(u8 taskId)
+void CursorCb_StatEdit(u8 taskId)
 {
     PlaySE(SE_SELECT);
     gSpecialVar_0x8004 = gPartyMenu.slotId;
@@ -4453,16 +4453,16 @@ static void CursorCb_StatEdit(u8 taskId)
 }
 
 
-static void ChangePokemonStatsPartyScreen_CB(void)
+void ChangePokemonStatsPartyScreen_CB(void)
 {
     CB2_ReturnToPartyMenuFromSummaryScreen();
 }
 
-static void ChangePokemonStatsPartyScreen(void)
+void ChangePokemonStatsPartyScreen(void)
 {
     StatEditor_Init(ChangePokemonStatsPartyScreen_CB);
 }
-static void CursorCb_StatEdit(u8 taskId)
+void CursorCb_StatEdit(u8 taskId)
 {
     PlaySE(SE_SELECT);
     gSpecialVar_0x8004 = gPartyMenu.slotId;
@@ -4470,7 +4470,7 @@ static void CursorCb_StatEdit(u8 taskId)
     Task_ClosePartyMenu(taskId);
 }
 
-static void LoadPartyMenuAilmentGfx(void)
+void LoadPartyMenuAilmentGfx(void)
 {
     LoadCompressedSpriteSheet(&sSpriteSheet_StatusIcons);
     LoadCompressedSpritePalette(&sSpritePalette_StatusIcons);
