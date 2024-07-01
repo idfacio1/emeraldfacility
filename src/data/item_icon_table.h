@@ -635,7 +635,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_MARANGA_BERRY] = {gItemIcon_MarangaBerry, gItemIconPalette_MarangaBerry},
     [ITEM_ENIGMA_BERRY_E_READER] = {gItemIcon_EnigmaBerry, gItemIconPalette_EnigmaBerry},
     // TMs/HMs
-    [ITEM_TM01] = {gItemIcon_TM, gItemIconPalette_FightingTMHM},
+    [ITEM_TM01] = {gItemIcon_TM, gItemIconPalette_NormalTMHM},
     [ITEM_TM02] = {gItemIcon_TM, gItemIconPalette_DragonTMHM},
     [ITEM_TM03] = {gItemIcon_TM, gItemIconPalette_WaterTMHM},
     [ITEM_TM04] = {gItemIcon_TM, gItemIconPalette_PsychicTMHM},
@@ -873,7 +873,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_FRESH_START_MOCHI] =  {gItemIcon_Mochi, gItemIconPalette_FreshStartMochi},
     [ITEM_GLIMMERING_CHARM] = {gItemIcon_GlimmeringCharm, gItemIconPalette_GlimmeringCharm},
     [ITEM_METAL_ALLOY] =  {gItemIcon_MetalAlloy, gItemIconPalette_MetalAlloy},
-    [ITEM_STELLAR_TERA_SHARD] = {gItemIcon_StellarTeraShard, gItemIconPalette_StellarTeraShard},
+    [ITEM_STELLAR_TERA_SHARD] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark}, //{gItemIcon_TeraShard, gItemIconPalette_StellarTeraShard},
     [ITEM_JUBILIFE_MUFFIN] = {gItemIcon_JubilifeMuffin, gItemIconPalette_JubilifeMuffin},
     [ITEM_REMEDY] = {gItemIcon_Remedy, gItemIconPalette_Remedy},
     [ITEM_FINE_REMEDY] = {gItemIcon_FineRemedy, gItemIconPalette_FineRemedy},
