@@ -171,12 +171,47 @@ static void BattleIntroNoSlide(u8 taskId)
         }
         break;
     case 3:
-        gTasks[taskId].tState++;
-        CpuFill32(0, (void *)BG_SCREEN_ADDR(28), BG_SCREEN_SIZE);
-        SetBgAttribute(1, BG_ATTR_CHARBASEINDEX, 0);
-        SetBgAttribute(2, BG_ATTR_CHARBASEINDEX, 0);
-        SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(28) | BGCNT_TXT256x512);
-        SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(30) | BGCNT_TXT512x256);
+        if (gTasks[taskId].data[3])
+        {
+            gTasks[taskId].data[3]--;
+        }
+        else
+        {
+            if (gTasks[taskId].tTerrain == BATTLE_TERRAIN_LONG_GRASS)
+            {
+                if (gBattle_BG1_Y != (u16)(-80))
+                    gBattle_BG1_Y -= 2;
+            }
+            else
+            {
+                if (gBattle_BG1_Y != (u16)(-56))
+                    gBattle_BG1_Y -= 1;
+            }
+        }
+
+        if (gBattle_WIN0V & 0xFF00)
+            gBattle_WIN0V -= 0x3FC;
+
+        if (gTasks[taskId].data[2])
+            gTasks[taskId].data[2] -= 2;
+
+        // Scanline settings have already been set in CB2_InitBattleInternal()
+        for (i = 0; i < DISPLAY_HEIGHT / 2; i++)
+            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = gTasks[taskId].data[2];
+
+        for (; i < DISPLAY_HEIGHT; i++)
+            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = -gTasks[taskId].data[2];
+
+        if (gTasks[taskId].data[2] == 0)
+        {
+            gScanlineEffect.state = 3;
+            gTasks[taskId].tState++;
+            CpuFill32(0, (void *)BG_SCREEN_ADDR(28), BG_SCREEN_SIZE);
+            SetBgAttribute(1, BG_ATTR_CHARBASEINDEX, 0);
+            SetBgAttribute(2, BG_ATTR_CHARBASEINDEX, 0);
+            SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(28) | BGCNT_TXT256x512);
+            SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(0) | BGCNT_CHARBASE(0) | BGCNT_16COLOR | BGCNT_SCREENBASE(30) | BGCNT_TXT512x256);
+        }
         break;
     case 4:
         BattleIntroSlideEnd(taskId);
